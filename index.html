@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Stone Paper Scissors</title>
+  </head>
+  <body>
+    <div class="score-container">
+      <div class="title">
+        <p>Rock</p>
+        <p>Paper</p>
+        <p>Scissors</p>
+      </div>
+      <div class="score-board">
+        <div class="computer-score">
+          <p>Computer<br />Score</p>
+          <p class="score" id="comp-score">0</p>
+        </div>
+
+        <div class="your-score">
+          <p>Your<br />Score</p>
+          <p class="score" id="user-score">0</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-container">
+      <div class="choices-container hide-choiceCon">
+        <div class="triangle"></div>
+        <div class="triangle1"></div>
+        <button class="icon rock-icon" id="rock"></button>
+        <button class="icon paper-icon" id="paper"></button>
+        <button class="icon scissor-icon" id="scissors"></button>
+      </div>
+      <div class="result-container hide-result">
+        <div class="result-generation">
+          <div class="result-choice">
+            <div id="yourChoice">YOU PICKED</div>
+            <div id="compChoice">PC PICKED</div>
+          </div>
+          <div class="animate">
+            <div class="choices your-pick">
+              <div class="main one"></div>
+              <span id="firstspan" style="--i: 1"></span>
+              <span id="firstspan" style="--i: 2"></span>
+              <span id="firstspan" style="--i: 3"></span>
+              </div>
+            <div class="result-box hidden">
+              <div id="status"></div>
+              <div id="status1">AGAINST PC</div>
+              <div>
+                <button id="play-btn">Play Again</button>
+              </div>
+            </div>
+            <div class="choices comp-pick">
+              <div class="main two"></div>
+              <span id="secondspan" style="--i: 1"></span>
+              <span id="secondspan" style="--i: 2"></span>
+              <span id="secondspan" style="--i: 3"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rules-container">
+      <div class="rules hide-ruleCon">
+        <div class="cross-btn">
+          <button id="cross-btn">&times;</button>
+        </div>
+        <h1>Game rules</h1>
+        <ul>
+          <li>
+            Rock beats scissors, scissors beat paper, and paper beats rock.
+          </li>
+          <li>
+            Agree ahead of time whether you’ll count off “rock, paper, scissors,
+            shoot” or just “rock, paper, scissors.”
+          </li>
+          <li>
+            Use rock, paper, scissors to settle minor decisions or simply play
+            to pass the time
+          </li>
+          <li>
+            If both players lay down the same hand, each player lays down
+            another hand
+          </li>
+        </ul>
+      </div>
+      <div class="rule-button">
+        <button id="rule-btn">Rules</button>
+      </div>
+      <div class="next-page hide-nextBtn">
+        <button id="next-btn">
+          <a href="/hurray.html">Next</a>
+        </button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

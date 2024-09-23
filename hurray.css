@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #8cc461;
+}
+.container {
+  height: 60vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.trophy {
+  top: 40%;
+  position: absolute;
+}
+.hurray {
+  position: absolute;
+  top: 100%;
+  text-align: center;
+}
+.hurray p {
+  letter-spacing: 5px;
+  line-height: 4rem;
+  color: white;
+  text-transform: uppercase;
+}
+#final-msg1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+#final-msg2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+#play-btn {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 30px;
+}
+#play-btn a {
+  text-decoration: none;
+  color: rgb(107, 107, 107);
+}
